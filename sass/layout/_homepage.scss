@@ -1,0 +1,23 @@
+.container{
+    height: 100vh;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    h1{
+        text-align: center;
+        padding:25px;
+    }
+}
+.cbo-group{
+    @include flex;
+
+    gap: 20px;
+}
+.txt-form{
+  @include flex;
+    gap: 15px;
+}
+.btn-group{
+    @include flex;
+    padding: 15px;
+}
