@@ -1,4 +1,12 @@
-input[type="text"]{
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"]{
     height: 30px;
+    width: 310px;
     border: 1px solid black;
+    -moz-appearance: textfield;
 }

@@ -9,12 +9,13 @@ body {
 
 select {
   height: 34px;
-  width: 150px;
+  width: 310px;
+  border: 1px solid black;
 }
 
 .container {
-  height: 100vh;
-  display: grid;
+  min-height: 877px;
+  display: flex;
   justify-content: center;
   align-items: center;
 }
@@ -24,33 +25,51 @@ select {
   padding: 25px;
 }
 
-.cbo-group {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
+.main {
+  text-align: center;
+  padding: 20px;
+  border: 2px solid black;
 }
 
-.txt-form {
-  display: flex;
-  justify-content: center;
-  gap: 15px;
+.main .cbo-group .group1,
+.main .cbo-group .group2 {
+  padding: 10px;
 }
 
-.btn-group {
+.main .cbo-group .con {
   display: flex;
-  justify-content: center;
-  padding: 15px;
+  padding: 10px;
 }
 
-input[type="text"] {
+.main .cbo-group .con1 {
+  display: flex;
+  padding: 10px 20px;
+}
+
+.main .btn-group {
+  padding: 10px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
   height: 30px;
+  width: 310px;
   border: 1px solid black;
+  -moz-appearance: textfield;
 }
 
 #btn-select {
   height: 40px;
   width: 148px;
   cursor: pointer;
+  background-color: #266bac;
+  color: #f4f4f4;
+  border: none;
 }
 
 footer {

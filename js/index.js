@@ -7,9 +7,7 @@ var cboTo = document.getElementById("cbo-to");
 var btn = document.getElementById("btn-select");
 var from;
 var to;
-var totAmount;
-var valueFrom;
-var valueFrom2;
+
 
 cboFrom.addEventListener("change", (event) => {
   from = event.target.value;
@@ -39,13 +37,7 @@ function cboCurrency(currency) {
   let fromRate = currency.rates[from];
   let toRate = currency.rates[to];
   var fixed;
-
   total = (toRate / fromRate) * search;
   fixed = total.toFixed(2);
-  totAmount = (document.getElementById("totalAmount").innerHTML = fixed);
-  valueFrom = document.getElementById("fromVal").innerHTML;
-  valueFrom2 = document.getElementById("toVal").innerHTML;
-
-
-
+  totAmount = document.getElementById("totalAmount").innerHTML = fixed;
 }

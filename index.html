@@ -14,10 +14,16 @@
 		<div class="main">
 			<h1>Currency Converter</h1>
 			<div class="cbo-group">
+				<div class="con1">
+					<p>Enter Value:</p>
+				</div>
 				<div class="txt-form">
-					<input type="text" id="txt-amount" oninput="" placeholder="Enter Amount">
+					<input type="number" id="txt-amount" placeholder="Enter Amount">
 				</div>
 				<div class="group1">
+					<div class="con">
+						<p>Convert From:</p>
+					</div>
 					<select id="cbo-from">
 						<option value="">Select One …</option>
 						<option value="USD">USD</option>
@@ -75,6 +81,9 @@
 					</select>
 				</div>
 				<div class="group2">
+					<div class="con">
+						<p>Convert To:</p>
+					</div>
 					<select id="cbo-to">
 						<option value="">Select One …</option>
 						<option value="USD">USD</option>
@@ -144,8 +153,6 @@
 	<footer>
 		<p>For Educational Purposes Only</p>
 	</footer>
-
 	<script src="js/index.js"></script>
 </body>
-
 </html>
