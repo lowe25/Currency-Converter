@@ -38,6 +38,7 @@ function cboCurrency(currency) {
   let toRate = currency.rates[to];
   var fixed;
   total = (toRate / fromRate) * search;
-  fixed = total.toFixed(2);
+  //fixed = total.toFixed(2);
+  fixed = total.toLocaleString();
   totAmount = document.getElementById("totalAmount").innerHTML = fixed;
 }
